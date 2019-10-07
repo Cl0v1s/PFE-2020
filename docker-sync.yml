@@ -1,0 +1,9 @@
+version: "2"
+syncs:
+  adcog_www:
+    notify_terminal: true
+    src: './www'
+    sync_excludes: ['.git', '.idea', 'node_modules']
+    sync_userid: '33'
+
+
