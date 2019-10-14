@@ -17,7 +17,7 @@ stop:
 
 w-init:
 	@echo "Lancement de l'instance docker"
-	docker run -v $(pwd)/www:/var/www/html/adcog -v $(pwd)/mysql:/var/lib/mysql -p 80:80 -p 3306:3306 --name pfe_container pfe:latest
+	docker run -v $(pwd)/www:/var/www/html/adcog -p 80:80 -p 3306:3306 --name pfe_container pfe:latest
 
 w-config: 
 	@echo "Configuration... Répondre Yes à tout."
