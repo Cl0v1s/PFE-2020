@@ -32,3 +32,6 @@ w-start:
 w-build: 
 	@echo "Construction image Docker"
 	docker build -t="pfe" .
+
+log:
+	docker exec -it pfe_container cat /var/log/apache2/error.log
